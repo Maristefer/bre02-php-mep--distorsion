@@ -74,7 +74,7 @@ function addCategory(event) {
             body: formData
         };
 
-        fetch('http://localhost:63342/bre01-distorsion/index.php?route=create-category', options)
+        fetch('http://localhost:63342/bre02-php-mep--distorsion/index.php?route=create-category', options)
             .then(response => response.json())
             .then(data => {
                 console.log(data);
@@ -114,7 +114,7 @@ function addChannel(event)
             body: formData
         };
 
-        fetch('http://localhost:63342/bre01-distorsion/index.php?route=create-channel', options)
+        fetch('http://localhost:63342/bre02-php-mep--distorsion/index.php?route=create-channel', options)
             .then(response => response.json())
             .then(data => {
                 console.log(data);
@@ -207,7 +207,7 @@ function switchChannel(event)
     let li = event.target;
     let chanId = li.getAttribute("data-chan");
 
-    fetch('http://localhost:63342/bre01-distorsion/index.php?route=chat&channel=' + chanId)
+    fetch('http://localhost:63342/bre02-php-mep--distorsion/index.php?route=chat&channel=' + chanId)
         .then(response => response.json())
         .then(data => {
             console.log(data);

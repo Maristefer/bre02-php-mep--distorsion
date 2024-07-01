@@ -60,7 +60,7 @@ export default () => {
                 body: formData
             };
 
-            fetch('http://localhost:63342/bre01-distorsion/index.php?route=send-message', options)
+            fetch('http://localhost:63342/bre02-php-mep--distorsion/index.php?route=send-message', options)
                 .then(response => response.json())
                 .then(data => {
                     contentInput.value = "";
